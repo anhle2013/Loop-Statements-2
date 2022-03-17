@@ -10,13 +10,13 @@
     <script>
         var n = parseInt(prompt('Tính tổng bao nhiêu số đầu tiên?'));
         var num=1, count=sum=0;
-        while (count<x) {
+        while (count<n) {
             if (num%7 ==0) {
                 console.log(num);
                 sum += num;
                 count++;
             }
-            n++;
+            num++;
         }
         alert('Tổng '+n+' số đầu tiên chia hết 7 là: ' +sum);
     </script>
