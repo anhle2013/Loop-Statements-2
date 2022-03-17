@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var f, f1=0, f2=1;
+        var kq="0  1"
+        var n=parseInt(prompt('Nhập số lượng số Fibo: '));
+        for (i=2;i<n;i++) {
+            f= f1+ f2;
+            f1= f2;
+            f2= f;
+            kq += '  ' + f;
+        }
+
+        document.write('Dãy Fibo '+n+' số là: '+kq);
+    </script>
+</body>
+</html>

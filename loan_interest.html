@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="loan.css">
+</head>
+<body>
+    <table>
+        <caption>Loan Calculator</caption>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Loan Amount ($)</td>
+                <td><input type="number" name="_loan" placeholder="10,000"></td>
+            </tr>
+            <tr>
+                <td>Loan Term (months)</td>
+                <td><input type="number" name="_term" placeholder="12"></td>
+            </tr>
+            <tr>
+                <td>Interest Rate (%)</td>
+                <td><input type="number" name="_rate" placeholder="1"></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <button id="demo"  type="button" onclick="cacul()"
+        onmouseover="mouseover()" onmouseout="mouseout()">Caculate</button>
+    <br> <br>
+    <table>
+        <caption>Result</caption>
+        <tbody>
+            <tr>
+                <td>Total</td>
+                <td id="total">0</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+<script src=".//loan.js" ></script>
+</html>

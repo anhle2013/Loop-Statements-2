@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="choi()">Chơi</button>
+</body>
+<script>
+    function choi() {
+        var count=1;
+        while (count<=3) {
+            var a = parseInt(prompt('nhập khoảng giá trị từ...'));
+            var b = parseInt(prompt('đến...'));
+            var x = parseInt(a+ Math.floor(Math.random() * (b-a)));
+            console.log(x);
+            var c = parseInt(prompt('Chọn 1 số từ '+a+' đến '+b));
+            if (c==x) {alert('Chúc mừng đoán đúng!');
+                        break;}
+                else if (c>x) {alert('Đoán cao hơn rồi, số '+x+' mới đúng');}
+                        else {alert('Đoán thấp hơn rồi, số '+x+' mới đúng');}
+            count++;
+        }
+        if (count=3) {alert('Xui, sai 3 lần rồi');}
+    }
+</script>
+</html>
